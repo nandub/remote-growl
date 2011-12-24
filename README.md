@@ -12,16 +12,20 @@ INSTALLATION
 On the Mac that you run Growl, make sure the following perl modules are
 installed:
 
+```
 Mac::Growl
 Crypt::CBCeasy
 MIME::Base64
 Digest::MD5
+```
 
 Mac::Growl can be found on CPAN and also in the Growl SDK which can be
 downloaded from http://growl.info.  All the other modules can be downloaded
 directly from CPAN using the following command:
 
+```
 $ sudo cpan Crypt::CBCeasy
+```
 
 Copy the file .growl-server to your home directory and edit it as appropriate.
 There are comments in the file that describe each parameter.  At the very least
@@ -34,7 +38,9 @@ otherwise you should set it to the hostname or IP address of your Mac.
 Launch growl-server.pl in the background.  You can optionally invoke it
 with --debug to have it output everything it receives to the console:
 
+```
 ./growl-server.pl --debug &
+```
 
 Whatever hosts you plan to run growl.pl and/or send-growl.pl will also need
 the perl modules mentioned above except for Mac::Growl.
@@ -50,7 +56,9 @@ script in Irssi (/script load growl).
 If you plan on using SSH port forwarding then make sure you ssh into your
 Irssi system as follows:
 
+```
 $ ssh -R 7106:localhost:7106 <username>@<hostname>
+```
 
 Once you've done this, launch Irssi, load the script, and try sending
 yourself a private message.  You should see it show up in Growl.
@@ -71,10 +79,13 @@ firewall to allow access to growl-server.pl.  To do this, invoke the
 following command, changing the source IP and destination port as 
 necessary:
 
+```
 $ sudo /sbin/ipfw -f add allow tcp from 1.2.3.4 to any 7106 keep-state
 
 NOTE: you will need to invoke this each time you reboot your Mac.
+```
 
+```
 USAGE
 
 Once the growl module is loaded into Irssi the following commands can be
@@ -121,4 +132,4 @@ NOTES: /growl watch uses case insensitive matching, so the command
 
        Watch strings are saved when the script is unloaded, so any 
        watch strings you specified will be rememberd if Irssi is restarted.
-
+```
