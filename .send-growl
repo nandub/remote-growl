@@ -1,0 +1,36 @@
+# The TCP port to listen on
+port=7106
+
+# The application name to register with Growl.  This is what will show
+# up in the Applications page of Growl's preferences
+appname=Remote Irssi
+
+# A passphrase used to secure growl messages sent by the app.  
+# An md5 hash of the message is created using this passphrase and 
+# verified by the server.
+passphrase=abc123
+
+# The host to bind the server to.  Most likely should be left as localhost
+# unless you have a multi-homed system.
+host=localhost
+
+# An arbitrary comma-delimited string of notification types.  You will see
+# these types appear in Growl
+types=error,warning,notice
+
+# The default notification to use.  Must be one of the above.
+type=notice
+
+# Whether the message should be "sticky" and remain on the monitor
+# until the user clicks on it.
+sticky=0
+
+# Optional image to dispaly in the message.  This should correspond to a
+# name listed in ~/.growl-server  as "image.XXX"
+image=microphone
+
+# key used for blowfish encryption of message.  To disable encryption
+# (if you're connecting via an ssh or vpn tunnel, etc) just comment
+# out the encryption key in both the client & server.  Blowfish keys
+# can be up to 56 bytes long (which provides best encryption)
+blowfish_key=abcdefghijklmnopqrstuvwxyz1234567890

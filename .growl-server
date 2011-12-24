@@ -1,0 +1,29 @@
+# The TCP port to listen on
+port=7106
+
+# The application name to register with Growl.  This is what will show
+# up in the Applications page of Growl's preferences
+appname=Remote Irssi
+
+# A passphrase used to secure growl messages sent by the app.  
+# An md5 hash of the message is created using this passphrase and 
+# verified by the server.
+passphrase=abc123
+
+# The host to bind the server to.  Most likely should be left as localhost
+# unless you have a multi-homed system.
+host=localhost
+
+# key used for blowfish encryption of message.  To disable encryption
+# (if you're connecting via an ssh or vpn tunnel, etc) just comment
+# out the encryption key in both the client & server.  Blowfish keys
+# can be up to 56 bytes long (which provides best encryption)
+blowfish_key=abcdefghijklmnopqrstuvwxyz1234567890
+
+#Image definitions, referenced by the "image" parameter above
+image.microphone=/Users/brucep/src/remote-growl/images/Microphone.icns
+image.RedDisc=/Users/brucep/src/remote-growl/images/Light Disc (Red).icns
+image.BlueDisc=/Users/brucep/src/remote-growl/images/Light Disc (Blue).icns
+image.GreenDisc=/Users/brucep/src/remote-growl/images/Light Disc (Green).icns
+image.AmberDisc=/Users/brucep/src/remote-growl/images/Light Disc (Amber).icns
+
