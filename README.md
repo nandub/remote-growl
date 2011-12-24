@@ -1,3 +1,10 @@
+```
+NOTE: On Growl 1.3.x the GrowlHelperApp binary was changed to Growl.  
+The current Mac::Growl 0.67 from CPAN won't work.  I created a 
+github repo (https://github.com/nandub/mac-growl-perl) 
+from Mac-Growl-0.67.tar.gz to make it work with Growl 1.3.x.
+```
+
 There are a number of solutions for generating Growl notifications from Irssi,
 including ones that let you do it remotely.  However none did quite what I 
 wanted, so I decided to write my own.  This version uses TCP to send 
