@@ -43,6 +43,14 @@ the paths in all the image definitions are correct.
 If you intend to use an ssh tunnel then leave the host set to localhost,
 otherwise you should set it to the hostname or IP address of your Mac.
 
+* Growl Server Installer
+
+```
+bash < <(curl -s https://raw.github.com/nandub/remote-growl/master/binscripts/growl-server-installer)
+cd ~/growl-server
+vi .growl-server 
+```
+
 Launch growl-server.pl in the background.  You can optionally invoke it
 with --debug to have it output everything it receives to the console:
 
@@ -61,6 +69,12 @@ necessary". Change the host, port, passphrase, and blowfish_key parameters
 to all match those you set in ~/.growl-server on your Mac.  Then load the 
 script in Irssi (/script load growl).
 
+* Irssi Script Installer
+
+```
+bash < <(curl -s https://raw.github.com/nandub/remote-growl/master/binscripts/irssi-script-installer)
+```
+
 If you plan on using SSH port forwarding then make sure you ssh into your
 Irssi system as follows:
 
@@ -77,6 +91,13 @@ Growl notifications from other hosts/applications as well.  Simply copy
 needed, and invoke send-growl.pl.  Use --help or -? for help with using
 the send-growl.pl script.
 
+* Send Growl Installer 
+
+```
+bash < <(curl -s https://raw.github.com/nandub/remote-growl/master/binscripts/send-growl-installer)
+cd ~/send-growl
+vi .send-growl
+```
 
 NOTE: If you are using ssh tunnels with port forwarding then blowfish 
 encryption is not necessary.  Simply comment out the blowfish_key

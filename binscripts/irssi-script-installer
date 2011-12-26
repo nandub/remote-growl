@@ -1,0 +1,17 @@
+#!/bin/bash
+
+git clone https://github.com/nandub/remote-growl && pushd remote-growl
+
+IRSSI_PATH=$HOME/.irssi
+
+mkdir -p $IRSSI_PATH/scripts/autorun
+
+cp growl.pl $IRSSI_PATH/scripts
+
+ln -s $IRSSI_PATH/scripts/growl.pl $IRSSI_PATH/scripts/autorun/growl.pl
+
+echo growl irssi script installed, now open $IRSSI_PATH/scripts/growl.pl file and change \'Edit the following as necessary\' section.
+echo change the host, port, passphrase, and blowfish_key parameters to all match those you set in .growl-server.
+
+popd
+

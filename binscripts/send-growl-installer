@@ -1,0 +1,18 @@
+#!/bin/bash
+
+git clone https://github.com/nandub/remote-growl && pushd remote-growl
+
+SEND_GROWL=$HOME/send-growl
+SEND_GROWL_CONF=$HOME/.send-growl
+
+mkdir -p $SEND_GROWL
+
+cp .send-growl send-growl.pl $SEND_GROWL
+
+ln -s $SEND_GROWL/.send-growl $SEND_GROWL_CONF
+
+echo send growl client installed, now open $SEND_GROWL_CONF file and make your custom changes.
+echo change the host, port, passphrase, and blowfish_key parameters to all match those you set in .growl-server.
+
+popd
+
