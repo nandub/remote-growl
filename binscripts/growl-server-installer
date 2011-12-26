@@ -9,10 +9,12 @@ mkdir -p $GROWL_SERVER
 
 cp -R .growl-server growl-server.pl images $GROWL_SERVER
 
-ln -s $GROWL_SERVER/.growl-server $GROWL_SERVER_CONF
+ln -sfF $GROWL_SERVER/.growl-server $GROWL_SERVER_CONF
 
 echo growl server installed, now open $GROWL_SERVER_CONF file and make your custom changes.
 echo change the host, port, passphrase, and blowfish_key parameters, make sure the images have absolute paths.
 
 popd
+
+rm -rf remote-growl
 
