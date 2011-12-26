@@ -21,9 +21,9 @@ host=localhost
 blowfish_key=abcdefghijklmnopqrstuvwxyz1234567890
 
 #Image definitions, referenced by the "image" parameter above
-image.microphone=/Users/brucep/src/remote-growl/images/Microphone.icns
-image.RedDisc=/Users/brucep/src/remote-growl/images/Light Disc (Red).icns
-image.BlueDisc=/Users/brucep/src/remote-growl/images/Light Disc (Blue).icns
-image.GreenDisc=/Users/brucep/src/remote-growl/images/Light Disc (Green).icns
-image.AmberDisc=/Users/brucep/src/remote-growl/images/Light Disc (Amber).icns
+image.microphone=/Users/name/growl-server/images/Microphone.icns
+image.RedDisc=/Users/name/growl-server/images/Light Disc (Red).icns
+image.BlueDisc=/Users/name/growl-server/images/Light Disc (Blue).icns
+image.GreenDisc=/Users/name/growl-server/images/Light Disc (Green).icns
+image.AmberDisc=/Users/name/growl-server/images/Light Disc (Amber).icns
 
