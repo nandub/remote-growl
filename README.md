@@ -22,6 +22,7 @@ installed:
 ```
 Mac::Growl
 Crypt::CBCeasy
+Crypt::Blowfish
 MIME::Base64
 Digest::MD5
 ```
