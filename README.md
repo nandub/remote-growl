@@ -1,8 +1,6 @@
 ```
-NOTE: On Growl 1.3.x the GrowlHelperApp binary was changed to Growl.  
-The current Mac::Growl 0.67 from CPAN won't work.  I created a 
-github repo (https://github.com/nandub/mac-growl-perl) 
-from Mac-Growl-0.67.tar.gz to make it work with Growl 1.3.x.
+NOTE: On Growl 1.3.x the GrowlHelperApp binary was changed to Growl.  The current Mac::Growl 0.67 from CPAN won't work.  
+I created a github repo (https://github.com/nandub/mac-growl-perl) from Mac-Growl-0.67.tar.gz to make it work.
 ```
 
 There are a number of solutions for generating Growl notifications from Irssi,
@@ -21,6 +19,15 @@ installed:
 
 ```
 Mac::Growl
+
+git clone https://github.com/nandub/mac-growl-perl
+cd mac-growl-perl
+perl Makefile.PL
+make
+[sudo] make install
+```
+
+```
 Crypt::CBCeasy
 Crypt::Blowfish
 MIME::Base64
